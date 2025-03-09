@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Scan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+    <h1>🎨 NFT Scan</h1>
+
+    <!-- 📷 NFT Scanエリア -->
+    <div id="qr-reader"></div>
+
+    <!-- 📌 カメラON/OFFボタン -->
+    <button id="toggle-camera">📷 カメラをONにする</button>
+
+    <!-- 🎨 NFT表示エリア -->
+    <h2>🖼 読み取ったNFT</h2>
+    <div id="nft-display">
+        <img id="nft-image" src="" alt="NFT画像" style="max-width: 300px; display: none;">
+        <video id="nft-video" style="max-width: 300px; display: none;" autoplay loop muted></video>
+        <p id="nft-name"></p>
+        <p id="nft-description"></p>
+    </div>
+
+    <a id="result" href="#" target="_blank"></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
